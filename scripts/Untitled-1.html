@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 71</title>
+</head>
+<body>
+    <ul id="mylist">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        var list = document.getElementById("mylist").childNodes;
+        var i = 0; // mask1
+        for (; i < list.length; i = i + 2) // mask2
+            if (list[i].innerHTML) console.log(list[i].innerHTML);
+    </script>
+</body>
+</html>
